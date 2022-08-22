@@ -41,7 +41,7 @@ app.delete("/movies/:id", async (req, res) => {
 //CONNECTING TO PORT
 const PORT= process.env.PORT;
 app.listen(PORT, () => {
-  console.log("server started");
+  console.log(`server started in ${PORT}`);
 });
 
 app.get("/movies/:id", async function (request, response) {
