@@ -38,8 +38,9 @@ app.delete("/movies/:id", async (req, res) => {
     .deleteOne({ id: id });
   res.send(movies);
 });
-
-app.listen(4000, () => {
+//CONNECTING TO PORT
+const PORT= process.env.PORT;
+app.listen(PORT, () => {
   console.log("server started");
 });
 
